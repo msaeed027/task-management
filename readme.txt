@@ -1,6 +1,4 @@
-Name: Mohamed Saeed Mohamed
-Registration Number: 15235003
------------------------------
+Planning for this framework will be published soon ...
 
 Technologies used:
 ------------------
