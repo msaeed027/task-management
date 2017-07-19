@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane
+        styleClass="background"
+        xmlns:fx="http://javafx.com/fxml/1"
+        xmlns="http://javafx.com/javafx/8"
+        stylesheets="@../../assets/css/styles.css"
+        fx:controller="codecubes.controllers.DefaultController">
+    <top>
+        <HBox styleClass="header">
+            <Label styleClass="h1" textAlignment="CENTER" text="Welcome to Task Management, have a nice day :)" />
+        </HBox>
+    </top>
+    <left>
+        <VBox styleClass="sidebar" spacing="7">
+            <!--<Label styleClass="h1, center" fx:id="loggedInUserName" />-->
+            <Button fx:id="userManagementBtn" text="User Management"></Button>
+            <Button fx:id="projectManagementBtn" text="Project Management"></Button>
+            <Button fx:id="logoutBtn" text="Logout"></Button>
+            <Button fx:id="exitBtn" text="Exit"></Button>
+        </VBox>
+    </left>
+    <center>
+        <VBox fx:id="mainContainer" styleClass="center">
+
+        </VBox>
+    </center>
+    <right></right>
+    <bottom></bottom>
+</BorderPane>

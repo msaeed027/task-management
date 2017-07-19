@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<VBox fx:id="taskContainer" spacing="5" VBox.vgrow="ALWAYS"
+      xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/8"
+      fx:controller="codecubes.controllers.TaskListController">
+
+    <HBox>
+        <Button fx:id="createNewTaskBtn" styleClass="btn, btn-inside" text="Create new task"></Button>
+        <Pane HBox.hgrow="ALWAYS" />
+    </HBox>
+    <ScrollPane fx:id="boardScrollPane" styleClass="scrollpane" hbarPolicy="NEVER" > <!-- minViewportHeight="400" minHeight="400" -->
+        <content>
+            <HBox fx:id="board" spacing="5" styleClass="board" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" > <!--  minHeight="400" -->
+                <VBox styleClass="board-list" HBox.hgrow="ALWAYS">
+                    <Label styleClass="todo-label" text="TODO" />
+                    <VBox fx:id="todo" spacing="5" styleClass="board-list-panel, todo" VBox.vgrow="ALWAYS">
+
+                    </VBox>
+                </VBox>
+                <VBox styleClass="board-list" HBox.hgrow="ALWAYS">
+                    <Label styleClass="in-progress-label" text="IN PROGRESS" />
+                    <VBox fx:id="inProgress" spacing="5"  styleClass="board-list-panel, in-progress" VBox.vgrow="ALWAYS">
+
+                    </VBox>
+                </VBox>
+                <VBox styleClass="board-list" HBox.hgrow="ALWAYS">
+                    <Label styleClass="done-label" text="DONE" />
+                    <VBox fx:id="done" spacing="5"  styleClass="board-list-panel, done" VBox.vgrow="ALWAYS">
+
+                    </VBox>
+                </VBox>
+            </HBox>
+        </content>
+    </ScrollPane>
+    <Pane></Pane>
+</VBox>

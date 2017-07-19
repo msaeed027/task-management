@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="projectContainer" spacing="5"
+      xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/8"
+      fx:controller="codecubes.controllers.ProjectFormController">
+
+    <Label fx:id="projectHeaderLabel" styleClass="h2" text="Create new project" />
+    <VBox styleClass="form-group">
+        <Label text="Name" />
+        <TextField fx:id="name"></TextField>
+    </VBox>
+    <VBox styleClass="form-group">
+        <Label text="Description" />
+        <TextArea wrapText="true" fx:id="description"></TextArea>
+    </VBox>
+    <HBox styleClass="form-group" spacing="5">
+        <Pane HBox.hgrow="ALWAYS" />
+        <Button fx:id="backBtn" styleClass="btn, btn-back" text="Back"></Button>
+        <Button fx:id="deleteBtn" styleClass="btn, btn-delete" text="Delete"></Button>
+        <Button fx:id="saveBtn" styleClass="btn, btn-save" text="Save"></Button>
+    </HBox>
+</VBox>

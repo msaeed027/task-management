@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane
+        styleClass="background"
+        xmlns:fx="http://javafx.com/fxml/1"
+        xmlns="http://javafx.com/javafx/8"
+        stylesheets="@../../assets/css/styles.css"
+        fx:controller="codecubes.controllers.LoginController">
+    <top>
+    </top>
+    <left>
+
+    </left>
+    <center>
+        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="300" minWidth="300"  styleClass="center">
+            <VBox fx:id="loginContainer" styleClass="center" spacing="5">
+                <Label styleClass="loginHeader" textAlignment="CENTER" text="Login" />
+                <Label fx:id="errors" text="" />
+                <VBox styleClass="form-group">
+                    <Label text="Email" />
+                    <TextField fx:id="email"></TextField>
+                </VBox>
+                <VBox styleClass="form-group">
+                    <Label text="Password" />
+                    <PasswordField fx:id="password"></PasswordField>
+                </VBox>
+                <HBox styleClass="form-group">
+                    <Pane HBox.hgrow="ALWAYS" />
+                    <Button fx:id="loginBtn" styleClass="btn, btn-save" text="Login"></Button>
+                </HBox>
+            </VBox>
+        </VBox>
+    </center>
+    <right></right>
+    <bottom></bottom>
+</BorderPane>

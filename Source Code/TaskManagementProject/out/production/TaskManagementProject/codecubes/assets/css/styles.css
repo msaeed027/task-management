@@ -1,0 +1,224 @@
+.background {
+    -fx-background-color: #FFF;
+    /* -fx-font-family: "Courier New"; */
+    -fx-background-image: url("/codecubes/assets/images/task-management.jpg");
+    -fx-background-position: center center;
+    -fx-background-size: cover;
+ }
+.header {
+    -fx-background-color: #f5f7f2;
+    -fx-min-height: 25px;
+    -fx-padding: 5px;
+}
+.sidebar {
+    -fx-padding: 15px 15px;
+}
+.sidebar Button {
+    -fx-cursor: hand;
+    -fx-min-width: 150px;
+    -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#9a9a9a, #909090),
+        linear-gradient(white 0%, #f3f3f3 50%, #ececec 51%, #f2f2f2 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 10 3 10;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 14px;
+}
+.sidebar Button:hover {
+    -fx-background-radius: 5,4,3,5;
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.center {
+    -fx-padding: 15px 15px 0 0;
+}
+.btn-menu {
+    -fx-cursor: hand;
+    -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#9a9a9a, #909090),
+        linear-gradient(white 0%, #f3f3f3 50%, #ececec 51%, #f2f2f2 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 10 3 10;
+    -fx-text-fill: #242d35;
+-fx-font-size: 14px;
+}
+.btn-inside {
+    -fx-cursor: hand;
+    -fx-background-color:
+        rgba(0,0,0,0.08),
+        linear-gradient(#5a61af, #51536d),
+        linear-gradient(#e4fbff 0%,#cee6fb 10%, #a5d3fb 50%, #88c6fb 51%, #d5faff 100%);
+    -fx-background-insets: 0 0 -1 0,0,1;
+    -fx-background-radius: 5,5,4;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 14px;
+}
+
+.btn-save {
+    -fx-min-width: 70px;
+    -fx-cursor: hand;
+    -fx-background-color:
+        #000000,
+        linear-gradient(#7ebcea, #2f4b8f),
+        linear-gradient(#426ab7, #263e75),
+        linear-gradient(#395cab, #223768);
+    -fx-background-insets: 0,1,2,3;
+    -fx-background-radius: 3,2,2,2;
+    -fx-padding: 5 10 5 10;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+.btn-save Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.8) , 0, 0.0 , 0 , 1);
+}
+
+.btn:hover {
+    -fx-background-radius: 5,4,3,5;
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.form-group {
+    -fx-padding: 5px 0;
+}
+
+.action-btn-container {
+    -fx-padding: 10px 0;
+}
+
+.h1 {
+    -fx-font-family: "Courier New";
+    -fx-padding: 0 15px;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #083b50;
+}
+.h2 {
+     -fx-font-size: 1.17em;
+     -fx-font-weight: bold;
+ }
+
+.board {
+    -fx-background-color: #FFF;
+}
+
+.board-list-panel {
+    -fx-background-color: #FFF;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5;
+    -fx-padding: 5px;
+}
+
+
+.todo {
+    -fx-min-width: 150px;
+    /* -fx-border-color: #de2125; */
+    -fx-background-color: #f5f5f5;
+}
+.in-progress {
+    -fx-min-width: 150px;
+    /* -fx-border-color: #0331ff; */
+    -fx-background-color: #f5f5f5;
+}
+.done {
+    -fx-min-width: 150px;
+    /* -fx-border-color: #089306; */
+    -fx-background-color: #f5f5f5;
+}
+
+
+.task {
+    -fx-background-color: #fff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5;
+    -fx-padding: 5px;
+}
+
+.assignTo {
+    -fx-text-fill: #848484;
+}
+
+.todo .task {
+    -fx-border-color: #de2125;
+}
+.in-progress .task {
+    -fx-border-color: #0331ff;
+}
+.done .task {
+    -fx-border-color: #089306;
+}
+
+.todo-label {
+    -fx-text-fill: #de2125;
+    -fx-font-size: 1em;
+    -fx-font-weight: bold;
+}
+.in-progress-label {
+    -fx-text-fill: #0331ff;
+    -fx-font-size: 1em;
+    -fx-font-weight: bold;
+}
+.done-label {
+    -fx-text-fill: #089306;
+    -fx-font-size: 1em;
+    -fx-font-weight: bold;
+}
+.scrollpane {
+   -fx-background: #fff;
+    -fx-border: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.scrollpane:focused {
+    -fx-background-insets: 0;
+}
+
+.scrollpane .corner {
+    -fx-background-insets: 0;
+}
+
+#userContainer, #projectContainer, #taskContainer {
+    -fx-background-color: #FFF;
+    -fx-padding: 15px;
+    -fx-background-radius: 5;
+}
+
+#loginContainer {
+    -fx-background-color: rgba(255, 255, 255, .8);
+    -fx-padding: 15px;
+    -fx-background-radius: 5;
+}
+
+.loginHeader {
+     -fx-font-size: 1.5em;
+    -fx-font-weight: 700;
+}
+
+#errors {
+    -fx-text-fill: red;
+}
+
+.errors {
+    -fx-text-fill: red;
+}
+
+.btn-back {
+    -fx-min-width: 70px;
+    -fx-cursor: hand;
+    -fx-padding: 5 10 5 10;
+    -fx-font-size: 12px;
+}
+
+.btn-delete {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-min-width: 70px;
+    -fx-cursor: hand;
+    -fx-padding: 5 10 5 10;
+    -fx-font-size: 12px;
+}

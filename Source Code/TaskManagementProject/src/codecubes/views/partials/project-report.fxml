@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="projectContainer" spacing="5"
+      xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/8"
+      fx:controller="codecubes.controllers.ProjectReportController">
+
+    <Label styleClass="h2" fx:id="reportHeaderTitle" />
+
+    <VBox fx:id="reportContainer" spacing="5"></VBox>
+
+    <HBox styleClass="form-group" spacing="5">
+        <Pane HBox.hgrow="ALWAYS" />
+        <Button fx:id="backBtn" styleClass="btn, btn-back" text="Back"></Button>
+    </HBox>
+</VBox>

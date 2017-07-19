@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="userContainer" spacing="5"
+      xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/8"
+      fx:controller="codecubes.controllers.UserFormController">
+
+    <Label fx:id="userHeaderLabel" styleClass="h2" text="Create new user" />
+    <VBox styleClass="form-group">
+        <Label text="First Name" />
+        <TextField fx:id="firstName"></TextField>
+    </VBox>
+    <VBox styleClass="form-group">
+        <Label text="Last Name" />
+        <TextField fx:id="lastName"></TextField>
+    </VBox>
+    <VBox styleClass="form-group">
+        <Label text="Email" />
+        <TextField fx:id="email"></TextField>
+        <Label fx:id="emailValidation" styleClass="errors" visible="false" managed="false" />
+    </VBox>
+    <VBox styleClass="form-group">
+        <Label text="Password" />
+        <PasswordField fx:id="password"></PasswordField>
+    </VBox>
+    <VBox styleClass="form-group">
+        <Label text="Is Manager" />
+        <CheckBox fx:id="isManager" text="Check this checkbox if you want to make this user as manager."></CheckBox>
+    </VBox>
+    <HBox styleClass="form-group" spacing="5">
+        <Pane HBox.hgrow="ALWAYS" />
+        <Button fx:id="backBtn" styleClass="btn, btn-back" text="Back"></Button>
+        <Button fx:id="deleteBtn" styleClass="btn, btn-delete" text="Delete"></Button>
+        <Button fx:id="saveBtn" styleClass="btn, btn-save" text="Save"></Button>
+    </HBox>
+</VBox>
